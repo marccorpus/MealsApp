@@ -1,18 +1,34 @@
-import { FlatList } from "react-native";
+import { StyleSheet, FlatList, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import CategoryGridTile from "../components/CategoryGridTile";
 
 import { CATEGORIES } from "../data/dummy-data";
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <FlatList
       data={CATEGORIES}
       keyExtractor={(item) => item.id}
       numColumns={2}
-      renderItem={({ item }) => <CategoryGridTile {...item} />}
+      renderItem={({ item }) => (
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => navigation.navigate("mealsScreen", { ...item })}
+        >
+          <CategoryGridTile {...item} />
+        </TouchableOpacity>
+      )}
     />
   );
 };
 
 export default HomeScreen;
+
+const styles = StyleSheet.create({
+  button: {
+    flex: 1,
+  },
+});

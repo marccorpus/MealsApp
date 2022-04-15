@@ -1,5 +1,3 @@
-import { StatusBar } from "expo-status-bar";
-
 import NativeStackNavigator from "./src/navigation/NativeStackNavigator";
 
 export default function App() {
