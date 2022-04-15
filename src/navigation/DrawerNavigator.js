@@ -20,6 +20,9 @@ const DrawerNavigator = () => {
           backgroundColor: colors.brown900,
         },
         headerTintColor: colors.white,
+        sceneContainerStyle: {
+          backgroundColor: colors.brown600,
+        },
       }}
     >
       <Drawer.Screen
