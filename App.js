@@ -1,9 +1,13 @@
-import NativeStackNavigator from "./src/navigation/NativeStackNavigator";
+import { Provider } from "react-redux";
+import { store } from "./src/store/store";
+import Navigation from "./src/navigation/NativeStackNavigator";
 
 export default function App() {
   return (
     <>
-      <NativeStackNavigator />
+      <Provider store={store}>
+        <Navigation />
+      </Provider>
     </>
   );
 }
