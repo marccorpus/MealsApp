@@ -10,7 +10,9 @@ export default Card;
 
 const styles = StyleSheet.create({
   container: {
-    margin: 16,
+    marginVertical: 16,
+    marginHorizontal: 24,
+    paddingBottom: 8,
     borderRadius: 8,
     backgroundColor: colors.white,
     elevation: 4,
@@ -21,6 +23,5 @@ const styles = StyleSheet.create({
     shadowColor: colors.black,
     shadowOpacity: 0.5,
     shadowRadius: 4,
-    paddingBottom: 8,
   },
 });

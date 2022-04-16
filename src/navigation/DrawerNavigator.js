@@ -12,17 +12,13 @@ const DrawerNavigator = () => {
   return (
     <Drawer.Navigator
       screenOptions={{
-        drawerStyle: { backgroundColor: colors.brown600 },
-        drawerActiveBackgroundColor: colors.brown900,
-        drawerActiveTintColor: colors.white,
+        drawerActiveBackgroundColor: colors.primary500,
+        drawerActiveTintColor: colors.primary600,
         drawerInactiveTintColor: colors.black,
         headerStyle: {
-          backgroundColor: colors.brown900,
+          backgroundColor: colors.primary600,
         },
         headerTintColor: colors.white,
-        sceneContainerStyle: {
-          backgroundColor: colors.brown600,
-        },
       }}
     >
       <Drawer.Screen

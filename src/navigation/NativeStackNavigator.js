@@ -14,12 +14,9 @@ const NativeStackNavigator = () => {
       <NativeStack.Navigator
         screenOptions={{
           headerStyle: {
-            backgroundColor: colors.brown900,
+            backgroundColor: colors.primary600,
           },
           headerTintColor: colors.white,
-          contentStyle: {
-            backgroundColor: colors.brown600,
-          },
         }}
       >
         <NativeStack.Screen

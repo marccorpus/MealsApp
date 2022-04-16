@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
     marginTop: 8,
+    marginHorizontal: 4,
   },
   subTitles: {
     flexDirection: "row",
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     marginTop: 8,
   },
   subTitle: {
-    marginHorizontal: 4,
+    marginHorizontal: 8,
     color: colors.grey,
   },
 });
